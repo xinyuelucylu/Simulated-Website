@@ -1,0 +1,295 @@
+*{box-sizing: border-box}
+
+html {
+    background-color:#FFF;
+}
+
+body {
+    margin: 0px;
+    font-family:sans-serif;
+}
+
+h1{
+    font:border;
+    font-size:48px;
+}
+
+h2{
+    font:border;
+    font-size:16px;
+}
+
+h3{
+    font-weight: 0;
+    font-size:12px;
+    letter-spacing: 3px;
+}
+
+h4{
+    font-family:lucida calligraphy;
+    font-size:50px;
+    line-height:0;
+}
+
+h5{
+    font-size:30px;
+    font-weight: 100;
+    line-height: 0;
+}
+
+hr{
+    color:lightgray;
+}
+
+a{
+    text-decoration:none; 
+    color:grey;
+}
+
+p{
+    color:grey;
+    font-size:12px;
+    line-height: 25px;
+}
+
+#navbar{
+    top:0;
+    position:fixed;
+    width:100%;
+    display:block;
+    background-color:white;
+    transition:top 0.5s;
+    z-index:9999;
+    text-align:center;
+}
+
+#navbar img{
+   margin-top: 10px;
+    float: left;
+}
+
+.navword{
+    left:20%;
+    display:block;
+    position:relative;
+}
+
+#navbar ul{
+    position:relative;
+    left:-15%;
+}
+
+#navbar a{
+    text-align: center;
+    text-decoration:none;
+    padding:10px;
+    font-size: 12px;
+    color: black;
+}
+
+#navbar a:hover{
+    color:red;
+    transition:0.5s;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.firstpost{
+    position: relative;
+}
+
+.left{
+    position:absolute;
+    left:20%;
+    top:25%;
+    color:black;
+    padding-left:10px;
+    padding-right:10px;
+    text-align: center;
+}
+
+.button{
+    background-color:#f44336;
+    border: none;
+    color: white;
+    padding: 15px 40px;
+    text-decoration:none;
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.footer{
+    background-color: #f6ebe3;
+    height:400px;
+}
+
+.foot-column {
+    top:30px;
+    display:block;
+    position:relative;
+    float: left;
+    left:10%;
+    width: 15%;
+    padding: 15px;
+    left:20%;
+    height: 300px; 
+}
+
+.foot-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row{
+    display:flex;
+    flex-wrap:wrap;
+    margin:0 250px;
+    padding:0 4px;
+    justify-content: center;
+}
+
+.column{
+    flex:25%;
+    text-align: center;
+    position:relative;
+}
+
+.column img{
+    vertical-align: middle;
+    width: 90%;
+}
+
+.column:hover .hiddenimg{
+    display:block;
+    background-color:orangered;
+    opacity:0.8;
+}
+
+.column .hiddenimg{
+    position:absolute;
+    top:0;
+    left:12px;
+    display:none;
+}
+
+.trow{
+    display:flex;
+    flex-wrap:wrap;
+    margin:0 250px;
+    padding:0 4px;
+    justify-content: center;
+}
+
+.tcolumn{
+    flex:25%;
+    
+}
+.tcolumn img{
+    vertical-align: middle;
+}
+
+
+.content {
+    opacity:0;
+    position:absolute;
+    width: 90%;
+    background-color:rgba(200,200,200,0.5);
+    transition: all 400ms ease-in;
+}
+
+.content:hover { opacity:1; }      
+
+.content img {
+    height:0;
+    opacity:1;
+    transition-delay: 0s;
+    transition-duration: 0.4s;
+}
+
+.example .content:hover img {
+    opacity:1;
+    transform: translateY(250px);
+}
+
+.mySlides {display: none}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.btn
+{
+    position: relative;
+    width: 120px;
+    height: 40px;
+    text-align:left;
+    background:white;
+    padding: 0 10px;
+    margin-right:5px;
+}
+
+#btn_container
+{
+    flex:50%;
+    width:25px;
+    height:40px; 
+    float:left;
+}
+
+.btn img 
+{  
+	margin-top:8px;
+    margin-right: 10px;
+ 	vertical-align:middle;
+}
+
+.btn span
+{
+    font-size:9px;
+	display:inline-block;
+    width: 70px;
+    margin-top: 8px;
+}
+
+.tworow {
+    display: flex;
+}
+
+.sm button:hover{
+    background-color: orangered;
+}
